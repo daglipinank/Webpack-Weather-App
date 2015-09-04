@@ -1,12 +1,13 @@
 require("./style.css");
 var $ = require("jquery");
-var dayImg = require("./day.jpg");echo
+var dayImg = require("./day.jpg");
 var nightImg = require("./night.jpg");
 $(document).ready(init);
 var results;
 var panelOpen = false;
 function init() {
 	$('body').css("background-img", "url("+dayImg+")");
+	console.log("url("+dayImg+")");
 	$('#go').click(goClicked);
 	$('#goAuto').click(goClickedAuto);
 	$('#zipSearch').click(goClickedZip);
