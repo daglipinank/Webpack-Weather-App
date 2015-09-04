@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="app">
+		<div class="container">
+			<h1>Instant Weather Check</h1>
+			<div class="input inputBox container">
+				<div class="label">Search by State,City:</div>
+				<input class = "stateName" type="text" placeholder="State"></input>
+				<input class = "cityName" type="text" placeholder="City"></input>
+				<button id="go" class="btn-default">GO!!!</button>
+				<div class="label">Search by Zipcode:</div>
+				<input class = "zip" type="text" placeholder="Zipcode"></input>
+				<button id="zipSearch" class="btn-default">GO!!!</button>
+				<div class="label">Auto detect Location:</div>
+				<button id="goAuto" class="btn-default">Auto Locate</button>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="cont container" hidden>
+			<div class="row">
+				<div class="label1 col-xs-3">Location:
+					<div class="text1 location"></div>
+				</div>
+				<div class="label1 col-xs-3">Temp(F):
+					<div class="text1 dispTempF"></div>
+				</div>
+				<div class="label1 col-xs-3">
+					<div class="text1 curriconText"></div>
+				</div>
+				<div class="label1 col-xs-3">
+					Elevation:
+					<div class="text1 elevation"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="label1 col-xs-3">
+					<img class="img4"></img>
+				</div>
+				<div class="label1 col-xs-3">
+					<button class="label2 btn1 btn btn-default">Show Weather Forecasts</button>
+				</div>
+				<img class="curricon"></img>
+				<div class="label1 col-xs-3">
+					Latitude:<div class="text1 lat"></div>
+					Longitude:<div class="text1 long"></div>
+				</div>
+				<div class="col-xs-3">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container outputweather" hidden>
+		<div class="day1 col-xs-4">
+			<div id="0" class="label day"></div><br/>
+			<div class="label">High:</div><div id = "1" class="text high"></div><div class="label">Low:</div><div id ="12"class="text low"></div>
+			<img id = "2" class="icon"></img>
+			<div id = "3" class="label iconText"></div>
+			<div id="forecastDay1" class="text"></div>
+		</div>
+		<div class="day2 col-xs-4">
+			<div id = "4" class="label day"></div><br/>
+			<div class="label">High:</div><div id = "5" class="text high"></div><div class="label">Low:</div><div id="13" class="text low"></div>
+			<img id = "6" class="icon"></img>
+			<div id = "7" class="label iconText"></div>
+			<div id="forecastDay2" class="text"></div>
+		</div>
+		<div class="day3 col-xs-4">
+			<div id = "8" class="label day"></div><br/>
+			<div class="label">High:</div><div id = "9" class="text high"></div><div class="label">Low:</div><div id="14" class="text low"></div>
+			<img id = "10" class="icon"></img>
+			<div id = "11" class="label iconText"></div>
+			<div id="forecastDay3" class="text"></div>
+		</div>
+		<button class="label2 btn2 btn btn-default">Show Something related</button>
+		<button class="label2 btn3 btn btn-default">Show me Live Feed</button>
+		<div class="dispImages">
+		</div>
+	</div>
+</div>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="bundle.js"></script>
+</body>
+</html>

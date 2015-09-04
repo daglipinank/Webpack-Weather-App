@@ -1,0 +1,53 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+.space {
+	height: 10px;
+}
+.cont {
+	border: 1pt solid blue;
+}
+h1{
+	color: yellow;
+	text-align: center
+}
+.label {
+	color: yellow;
+	font-size: 1vw
+}
+.text1 {
+	color: red;
+	font-size: 3vw;
+}
+.label1 {
+	color: yellow;
+	font-size: 2vw;
+}
+.label2 {
+	color: blue;
+	font-size: 1vw;
+}
+.text {
+	color: red;
+	font-size: 2ve;
+}
+img {
+	height:10%;
+	width:10%;
+}
+.img2 {
+	height:30%;
+	width:30%;
+}
+.day1 .day2 .day3 {
+	border : 1px solid blue;
+}
+.img4 {
+	height:100%;
+	width:100%;
+}
+
+
+
+
